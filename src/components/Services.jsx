@@ -1,7 +1,7 @@
-import React from 'react'
+import Wrapper from '../assets/wrappers/Services'
 
 const Services = () => {
-	return <div>Services Page</div>
+	return <Wrapper>Services Page</Wrapper>
 }
 
 export default Services

@@ -1,7 +1,7 @@
-import React from 'react'
+import Wrapper from '../assets/wrappers/About'
 
 const About = () => {
-	return <div>About Page</div>
+	return <Wrapper>About Page</Wrapper>
 }
 
 export default About
