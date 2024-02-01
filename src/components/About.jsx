@@ -1,7 +1,11 @@
 import Wrapper from '../assets/wrappers/About'
 
 const About = () => {
-	return <Wrapper>About Page</Wrapper>
+	return (
+		<Wrapper>
+			<p>info about Shaneka</p>
+		</Wrapper>
+	)
 }
 
 export default About
