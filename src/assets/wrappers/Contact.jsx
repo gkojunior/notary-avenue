@@ -15,7 +15,7 @@ const Wrapper = styled.section`
 		font-size: 1em;
 	}
 	.formContainer {
-		padding: 13rem 0 10px 30rem;
+		padding: 5rem 0 0 31rem;
 
 		width: 500px;
 	}
@@ -61,11 +61,28 @@ const Wrapper = styled.section`
 	}
 	/* ---------- Tablet View ------------ */
 
-	@media only screen and (max-width: 725) {
+	@media only screen and (max-width: 768px) {
+		input {
+		width: 100%;
+		height: 15px;
+		padding: 3px;
+		}
+		.formContainer {
+		padding: 5rem 0 0 5px;
+	}
 	}
 	/* ---------- Laptop View ------------ */
 
 	@media only screen and (max-width: 1024px) {
+		.formContainer {
+		padding: 5rem 0 0 9rem;
+	}
+	}
+
+	@media only screen and (min-width: 1025px) {
+		.formContainer {
+		padding: 5rem 0 0 16rem;
+	}
 	}
 `
 export default Wrapper

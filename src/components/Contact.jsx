@@ -1,6 +1,8 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import Wrapper from '../assets/wrappers/Contact'
+import Title from './Title'
+import Navbar from './Navbar'
 
 const Contact = () => {
 	const form = useRef()
@@ -27,6 +29,10 @@ const Contact = () => {
 	}
 	return (
 		<Wrapper>
+			<Navbar />
+			<div className='title'>
+				<Title title='Contact' subTitle='Me' />
+			</div>
 			<div className='formContainer'>
 				<p className='message'>Send me an email with a detail message!</p>
 				<form ref={form} onSubmit={sendEmail}>
