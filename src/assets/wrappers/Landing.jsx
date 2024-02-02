@@ -60,7 +60,7 @@ const Wrapper = styled.section`
 	}
 	@media screen and (min-width: 1025px) {
 		h1{
-			padding: 16rem 0 1rem 10rem;
+			padding: 10rem 0 1rem 10rem;
 		}
 		h2{padding-left:10rem}
 		h3{padding-left:5rem}
