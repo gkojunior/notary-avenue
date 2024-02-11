@@ -1,15 +1,16 @@
 import styled from 'styled-components'
 
 const Wrapper = styled.section`
-	height: 100vh;
 	width: 100vw;
-	background: #f8bcc6cc;
 	.message {
 		text-align: center;
 	}
 	.formContainer {
-		width: 500px;
 		margin: 8em auto;
+		max-width: 40em;
+		border:2px solid pink;
+		border-radius: var(--borderRadius);
+		padding:4rem 5rem;
 	}
 	input {
 		width: 100%;
@@ -17,7 +18,7 @@ const Wrapper = styled.section`
 		padding: 7px;
 		outline: none;
 		border-radius: 5px;
-		border: 1px solid rgb(220, 220, 220);
+		border: 2px solid rgb(220, 220, 220);
 
 		&:focus {
 			border: 2px solid rgb(254, 83, 243);
@@ -56,7 +57,6 @@ const Wrapper = styled.section`
 	@media only screen and (max-width: 768px) {
 		input {
 			width: 100%;
-			height: 15px;
 			padding: 3px;
 		}
 	}

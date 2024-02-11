@@ -1,21 +1,27 @@
 import styled from 'styled-components'
 
 const Wrapper = styled.section`
-	background: #f8bcc6cc;
+	h1{text-align:center;
+	margin-bottom:1rem;}		
 	.page {
 		display: grid;
 		align-items: center;
+		background-color:#e4e4e4cc;
+padding:2rem;	}
+	.main-img {
+		display: none;
 	}
-	.services{
-		padding:1.5rem;
-	}
-	.message{
-		font-weight:700;
-		text-align:center;
-	}
-	.underline{
-		text-decoration:underline;
-		text-transform:capitalize;
+	.message{text-align:center;
+	padding:1rem;}
+	@media (min-width: 992px) {
+		.page {
+			grid-template-columns: 1fr 1fr;
+			column-gap: 3rem;
+		}
+		.main-img {
+			border-radius: 10px;
+			display: block;
+		}
 	}
 `
 export default Wrapper

@@ -1,21 +1,21 @@
 import styled from 'styled-components'
 
 const Wrapper = styled.section`
-	font-weight: 700;
-	.slider-container {
-		margin: 0 auto;
-		width: 80vw;
-		max-width: 800px;
-		position: relative;
-		height: 450px;
-		overflow: hidden;
+
+	.slider-container {	font-weight: 700;
+	margin: 0 auto;
+	width: 80vw;
+	max-width: 800px;
+	position: relative;
+	bottom: 0;
+	overflow: hidden;
 	}
 	.slide {
 		text-align: center;
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		width: 100%;
+		width: 100vw;
 		transition: var(--transition);
 	}
 
@@ -48,11 +48,6 @@ const Wrapper = styled.section`
 		line-height: 2;
 		color: purple;
 	}
-	.icon {
-		font-size: 3rem;
-		margin-top: 1rem;
-		color: grey;
-	}
 	.prev,
 	.next {
 		position: absolute;
@@ -71,7 +66,7 @@ const Wrapper = styled.section`
 	.prev:hover,
 	.next:hover {
 		background: orange;
-		color:purple;
+		color: purple;
 	}
 	.prev {
 		left: 0;
@@ -82,7 +77,7 @@ const Wrapper = styled.section`
 	@media screen and (max-width: 800px) {
 		.text {
 			max-width: 45em;
-			font-size:.75rem
+			font-size: 0.75rem;
 		}
 		.prev,
 		.next {
