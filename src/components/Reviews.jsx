@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { shortList, list, longList } from '../assets/data'
-import { FaQuoteRight } from 'react-icons/fa'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 import Wrapper from '../assets/wrappers/Reviews'
 
