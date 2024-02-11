@@ -8,13 +8,13 @@ const Wrapper = styled.section`
 	.underline {
 		width: 8rem;
 		height: 0.25rem;
-		background: pink;
+		background: var(--pink-dark);
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 1rem;
 	}
-	span{
-		color:pink;
+	span {
+		color: var(--pink-dark);
 	}
 `
 export default Wrapper

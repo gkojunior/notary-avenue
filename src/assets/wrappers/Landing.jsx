@@ -4,69 +4,88 @@ const Wrapper = styled.section`
 	height: 100vh;
 	width: 100vw;
 	background: url(/src/assets/bg5.jpg);
-	/* opacity:0.8; */
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: left;
-	.container,
-	
+	.page {
+		height: 80vh;
+		display: grid;
+		align-items: center;
+	}
+
 	h1 {
-		color: rgb(245, 78, 106);
+		font-weight: 700;
+
+		color: #ffa200;
 	}
-	span{
-		color:rgb(254, 83, 243);
-	}
-	h2,
-	h3 {
-		color: black;
-	}
-	.links {
-		display: flex;
-		list-style: none;
-		padding-top: 1rem;
-	}
-	ul {
-		color: rgb(245, 78, 106);
-	}
-	li {
+
+	a {
 		padding: 1rem;
-		font-size: 1.5rem;
+		color:purple;
+	}
+	a:hover{
+		color:#ffa200;
+	}
+	p {
+		padding: 0.5rem;
+		font-weight: 700;
+	}
+	.main-img {
+		display: none;
+	}
+
+	@media (min-width: 992px) {
+		.page {
+			grid-template-columns: 1fr 1fr;
+			column-gap: 3rem;
+		}
+		.main-img {
+			border-radius: 10px;
+			display: block;
+		}
+		img {
+			height: 500px;
+		}
 	}
 
 	/* ---------- Cell phone View ------------ */
 
 	@media screen and (max-width: 425px) {
-		h1 {
-		padding-top: 2rem;
-		font-size: 2rem;
-		text-align:center;
-	}
+		h1,
+		p,
+		.links {
+			font-size: 2rem;
+
+			text-align: center;
+		}
+		.links {
+			font-size: 1.3rem;
+		}
+
+		p {
+			font-size: 0.9rem;
+		}
 	}
 	/* ---------- Tablet View ------------ */
 
-	@media screen and (max-width: 768px) {
+	@media screen and (min-width: 768px) {
+		.links {
+			display: flex;
+		}
 		h1 {
-		padding: 3rem 0 1rem 2rem;
-	}
+			font-size: 3rem;
+		}
 	}
 	/* ---------- Laptop View ------------ */
 
 	@media screen and (min-width: 1024px) {
-		h1{
-			padding-top: 8rem;
+		h1 {
 			font-size: 4rem;
-
+		}.links{
+			font-size:1.2rem;
 		}
 	}
 	@media screen and (min-width: 1025px) {
-		h1{
-			padding: 10rem 0 1rem 10rem;
-		}
-		h2{padding-left:10rem}
-		h3{padding-left:5rem}
-		ul{padding-left:7rem}
-
-
 	}
 `
 export default Wrapper

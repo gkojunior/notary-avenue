@@ -1,6 +1,9 @@
-* {
-	padding: 0;
+*,
+::after,
+::before {
 	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 :root {
@@ -9,6 +12,7 @@
 	font-weight: 400;
 	--fluid-width: 90vw;
 	--max-width: 1120px;
+	--fixed-width: 600px;
 	--borderRadius: 0.25rem;
 	--letterSpacing: 1px;
 	--transition: 0.3s ease-in-out all;
@@ -18,9 +22,12 @@
 	-moz-osx-font-smoothing: grayscale;
 
 	/* Colors */
-	--purple: rgb(254, 83, 243);
-  --red:rgb(245, 78, 106);
-  
+	--purple: purple;
+	--orange-light: #fdc565;
+	--orange: #ffa200;
+	--pink: pink;
+	--pink-dark: #ff879b;
+
 	/* box shadow*/
 	--shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 	--shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -36,10 +43,10 @@
 a {
 	font-weight: 700;
 	text-decoration: inherit;
-	color: rgb(245, 78, 106);
+	color: black;
 }
 a:hover {
-	color: rgb(0, 0, 0);
+	color: purple;
 }
 
 /* buttons */
@@ -66,7 +73,49 @@ a:hover {
 	font-size: 1.25rem;
 	padding: 0.5rem 1.25rem;
 }
+/* form */
 
+.form {
+	width: 90vw;
+	max-width: var(--fixed-width);
+	background: var(--white);
+	border-radius: var(--borderRadius);
+	box-shadow: var(--shadow-2);
+	padding: 2rem 2.5rem;
+	margin: 3rem auto;
+}
+.form-label {
+	display: block;
+	font-size: var(--small-text);
+	margin-bottom: 0.5rem;
+	text-transform: capitalize;
+	letter-spacing: var(--letterSpacing);
+}
+.form-input,
+.form-textarea {
+	width: 100%;
+	padding: 0.375rem 0.75rem;
+	border-radius: var(--borderRadius);
+	background: var(--backgroundColor);
+	border: 1px solid var(--grey-200);
+}
+
+.form-row {
+	margin-bottom: 1rem;
+}
+
+.form-textarea {
+	height: 7rem;
+}
+::placeholder {
+	font-family: inherit;
+	color: var(--grey-400);
+}
+.form-alert {
+	color: var(--red-dark);
+	letter-spacing: var(--letterSpacing);
+	text-transform: capitalize;
+}
 .container {
 	width: var(--fluid-width);
 	max-width: var(--max-width);
