@@ -7,17 +7,9 @@ const Wrapper = styled.section`
 	.message {
 		text-align: center;
 	}
-	form {
-		display: flex;
-		align-items: flex-start;
-		flex-direction: column;
-		width: 100%;
-		font-size: 1em;
-	}
 	.formContainer {
-		padding: 5rem 0 0 31rem;
-
 		width: 500px;
+		margin: 8em auto;
 	}
 	input {
 		width: 100%;
@@ -63,26 +55,17 @@ const Wrapper = styled.section`
 
 	@media only screen and (max-width: 768px) {
 		input {
-		width: 100%;
-		height: 15px;
-		padding: 3px;
+			width: 100%;
+			height: 15px;
+			padding: 3px;
 		}
-		.formContainer {
-		padding: 5rem 0 0 5px;
-	}
 	}
 	/* ---------- Laptop View ------------ */
 
 	@media only screen and (max-width: 1024px) {
-		.formContainer {
-		padding: 5rem 0 0 9rem;
-	}
 	}
 
-	@media only screen and (min-width: 1025px) {
-		.formContainer {
-		padding: 5rem 0 0 16rem;
-	}
+	@media only screen and (min-width: 1024px) {
 	}
 `
 export default Wrapper

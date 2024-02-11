@@ -18,6 +18,9 @@ const Navbar = () => {
 				</li>
 				<li>
 						<Link to='/contact'>Contact</Link>
+				</li>
+				<li>
+						<Link to='/questions'>FAQ</Link>
 					</li>
 				</ul>
 		</Wrapper>

@@ -16,6 +16,9 @@ const Wrapper = styled.section`
 	}
 	p {
 		color: orange;
+		padding: 1rem 0;
+		line-height: 1.5rem;
+		font-size: 1.2rem;
 	}
 	.main-img {
 		display: none;
@@ -26,10 +29,10 @@ const Wrapper = styled.section`
 			column-gap: 3rem;
 		}
 		.main-img {
-			border-radius:10px;
+			border-radius: 10px;
 			display: block;
 		}
-		img{
+		img {
 			height: 500px;
 		}
 	}
