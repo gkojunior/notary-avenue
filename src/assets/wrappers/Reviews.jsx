@@ -1,33 +1,23 @@
 import styled from 'styled-components'
 
 const Wrapper = styled.section`
-
-	.slider-container {	font-weight: 700;
 	margin: 0 auto;
-	width: 80vw;
-	max-width: 800px;
+	width: 100vw;
+	max-width: 80vw;
 	position: relative;
 	bottom: 0;
+	height: 150px;
 	overflow: hidden;
-	}
+
 	.slide {
 		text-align: center;
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		width: 100vw;
+
+		width: 100%;
 		transition: var(--transition);
 	}
-
-	/* .person-img {
-		width: 150px;
-		height: 150px;
-		border-radius: 50%;
-		margin-bottom: 1rem;
-		object-fit: cover;
-		border: 4px solid var(--primary-200);
-		box-shadow: var(--shadow-3);
-	} */
 
 	.name {
 		font-size: 1.3rem;
@@ -38,7 +28,7 @@ const Wrapper = styled.section`
 	}
 	.title {
 		text-transform: capitalize;
-		color: #ffa200;
+		color: var(--pink-dark);
 		margin-bottom: 0.75rem;
 	}
 	.text {
@@ -46,14 +36,14 @@ const Wrapper = styled.section`
 		margin: 0 auto;
 		margin-top: 1rem;
 		line-height: 2;
-		color: purple;
+		color: var(--pink-dark);
 	}
 	.prev,
 	.next {
 		position: absolute;
-		bottom: 100px;
-		background: purple;
-		color: #ffa200;
+		bottom: 0;
+		background: black;
+		color: var(--pink-dark);
 		width: 1.25rem;
 		height: 1.25rem;
 		display: grid;

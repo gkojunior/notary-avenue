@@ -2,7 +2,6 @@ import Wrapper from '../assets/wrappers/Services'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import Title from './Title'
-import { Link } from 'react-router-dom'
 
 const Services = () => {
 	return (
@@ -10,7 +9,8 @@ const Services = () => {
 			<Navbar />
 			<div className='title'>
 				<Title title='Services' subTitle='' />
-			</div>	<p className='message'>
+			</div>
+			<p className='message'>
 				Notary Avenue offers services, professional loan signing, and general
 				notary services to businesses and individuals by conveniently meeting
 				with customers at an agreed upon location.
@@ -18,7 +18,6 @@ const Services = () => {
 			<p className='message'>** this list of common forms requiring a notary</p>
 			<div className='container page'>
 				<div>
-			
 					<h1>Documents that cannot be notarized: </h1>
 					<ul className='underline'>
 						<li> Marriage records issued by VA Circuit Court</li>
@@ -48,19 +47,20 @@ const Services = () => {
 					</ul>
 				</div>
 
-				<div><h1>Payment Information:</h1><p className='message'>
-				Payments: The rate is determined by your location and the number of
-				documents that need to be notarized. Payment is due upon completion of
-				services. Travel fees apply and are separate from the notarization fee.
-			</p>
+				<div>
+					<h1>Payment Information:</h1>
+				</div>
+				<p className='message'>
+					Payments: The rate is determined by your location and the number of
+					documents that need to be notarized. Payment is due upon completion of
+					services. Travel fees apply and are separate from the notarization
+					fee.
+				</p>
+				<p className='message'>
+					Accepted Payment Methods: Cash, PayPal, Venmo, Apple Pay
+				</p>
+			</div>
 			<p className='message'>
-				Accepted Payment Methods: Cash, PayPal, Venmo, Apple Pay
-			</p>
-			
-
-			</div>
-			</div>
-<p className='message'>
 				Please note: Providing the wrong type of document, failing to supply
 				required witnesses, or requesting the wrong type of notarial service
 				does not constitute an error on the notary’s part. By law, a

@@ -13,7 +13,7 @@ const About = () => {
 				<Title title='about' subTitle='me' />
 			</div>
 			<div className='container page'>
-				<div >
+				<div>
 					<h1>
 						Shaneka <span>Owusu</span>
 					</h1>
@@ -30,7 +30,8 @@ const About = () => {
 				</div>
 				<img src={main} alt='picture' className='img main-img' />
 			</div>
-			<Footer/>
+
+			<Footer />
 		</Wrapper>
 	)
 }

@@ -2,6 +2,7 @@ import Wrapper from '../assets/wrappers/Landing'
 import { Link } from 'react-router-dom'
 import Reviews from './Reviews'
 import bgImage from '../assets/bg5.jpg'
+
 const Landing = () => {
 	return (
 		<>
@@ -21,8 +22,10 @@ const Landing = () => {
 							<Link to='/questions'>FAQ</Link>
 						</div>
 					</div>
-				</div>			<Reviews />
-
+				</div>
+				<div>
+					<Reviews />
+				</div>
 			</Wrapper>
 		</>
 	)

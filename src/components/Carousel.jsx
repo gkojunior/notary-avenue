@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
-import { shortList, list, longList } from '../assets/data'
+import { longList } from '../assets/data'
+import { FaQuoteRight } from 'react-icons/fa'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
-import Wrapper from '../assets/wrappers/Reviews'
+import Wrapper from '../assets/wrappers/Carousel'
 
-const Reviews = () => {
+const Carousel = () => {
 	const [people, setPeople] = useState(longList)
 	const [currentPerson, setCurrentPerson] = useState(0)
 
@@ -43,11 +44,11 @@ const Reviews = () => {
 						}}
 						key={id}
 					>
-						{/* <img src={image} alt={name} className='person-img' /> */}
+						<img src={image} alt={name} className='person-img' />
 						<h5 className='name'>{name}</h5>
 						<p className='title'>{title}</p>
 						<p className='text'>{quote}</p>
-						{/* <FaQuoteRight className='icon' /> */}
+						<FaQuoteRight className='icon' />
 					</article>
 				)
 			})}
@@ -60,4 +61,4 @@ const Reviews = () => {
 		</Wrapper>
 	)
 }
-export default Reviews
+export default Carousel

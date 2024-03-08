@@ -6,7 +6,6 @@ import FAQ from './components/FAQ'
 import Landing from './components/Landing'
 import Services from './components/Services'
 
-
 function App() {
 	return (
 		<Router>

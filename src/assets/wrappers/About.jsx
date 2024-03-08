@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 const Wrapper = styled.section`
-	height: 100vh;
 	width: 100vw;
+	background: grey;
+
 	.page {
 		height: 80vh;
 		display: grid;
@@ -11,7 +12,7 @@ const Wrapper = styled.section`
 	h1 {
 		font-weight: 700;
 		span {
-			color: pink;
+			color: var(--pink-dark);
 		}
 	}
 	p {
