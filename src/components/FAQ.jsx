@@ -8,31 +8,42 @@ const FAQ = () => {
 		<>
 			<Wrapper>
 				<Navbar />
-
-				<div className='FAQuestions'>
 				<div className='title'>
-				<Title title='Fequently' subTitle='Asked Question' />
-			</div>
-					<h1>What is a Notary?</h1>
-					<p>
-						A Notary is a person of integrity, appointed by the Secretary of
-						State to verify the identity of document signers. A Notary also
-						performs copy certifications and administers oaths and affirmations.
-						What is a Notary Signing Agent?A notary signing agent is a notary
-						public that notarizes mortgage documents for borrowers who purchase
-						or refinance their current mortgage. Notary signing agents are
-						impartial witnesses who identify the signer(s), verify that all
+					<Title title='Fequently' subTitle='Asked Question' />
+				</div>
+				<div className='container page'>
+					<div>
+						<h1>What is a Notary?</h1>
+						<p>
+							A Notary is a person of integrity, appointed by the Secretary of
+							State to verify the identity of document signers. A Notary also
+							performs copy certifications and administers oaths and
+							affirmations.
+						</p>
+					</div>
+					<div>
+						<h1>What is a Notary Signing Agent?</h1>A notary signing agent is a
+						notary public that notarizes mortgage documents for borrowers who
+						purchase or refinance their current mortgage. Notary signing agents
+						are impartial witnesses who identify the signer(s), verify that all
 						documents are signed and dated, notarize the documents, and return
 						the executed loan package to the lender.
-					</p>
-
+					</div>
+					<div>
+						<h1>What is a Notarization?</h1>
+						<p>
+							Notarization is a certificate filled out by the Notary, certifying
+							certain facts about the signer and document. The Notary does not
+							verify the accuracy or validity of the document. Proper ID (What
+							to Bring)Proper identification is required for any notarial
+							service that requires verification of the signature.
+						</p>
+					</div>
 					<p>
-						What is a Notarization?Notarization is a certificate filled out by
-						the Notary, certifying certain facts about the signer and document.
-						The Notary does not verify the accuracy or validity of the document.
-						Proper ID (What to Bring)Proper identification is required for any
-						notarial service that requires verification of the signature.
-						Virginia recognizes the following types of identification as valid:
+						<h1>
+							Virginia recognizes the following types of identification as
+							valid:
+						</h1>
 						<ul>
 							<li>* Virginia Driver License or ID Card</li>
 							<li>* United States passport</li>
@@ -60,6 +71,14 @@ const FAQ = () => {
 							</li>
 						</ul>
 					</p>
+				</div>
+				<div className='message'>
+					<h1>What is a Notary Signing Agent?</h1> A notary signing agent is a
+					notary public that notarizes mortgage documents for borrowers who
+					purchase or refinance their current mortgage. Notary signing agents
+					are impartial witnesses who identify the signer(s), verify that all
+					documents are signed and dated, notarize the documents, and return the
+					executed loan package to the lender.
 				</div>
 			</Wrapper>
 			<Footer />

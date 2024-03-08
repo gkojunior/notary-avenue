@@ -30,7 +30,6 @@ const Navbar = () => {
 						<Link to='/questions'>FAQ</Link>
 					</li>
 				</ul>
-				
 
 				<div className='toogle' onClick={handleToggle}>
 					{toggle ? <FaTimes /> : <HiMenuAlt3 />}

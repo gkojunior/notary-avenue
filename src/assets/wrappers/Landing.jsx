@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 
 const Wrapper = styled.section`
+		width: 100vw;
+
 	height: 100vh;
-	width: 100vw;
-	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: left;
+	
 	.page {
 		height: 80vh;
 		display: grid;
@@ -15,15 +16,15 @@ const Wrapper = styled.section`
 	h1 {
 		font-weight: 700;
 
-		color: #ffa200;
+		color: var(--pink-dark);
 	}
 
 	a {
 		padding: 1rem;
-		color: purple;
+		color: var(--pink-dark);
 	}
 	a:hover {
-		color: #ffa200;
+		color: var(--pink);
 	}
 	p {
 		padding: 0.5rem;
@@ -34,13 +35,14 @@ const Wrapper = styled.section`
 	}
 	.bg {
 		width: 100vw;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-	left:0;
-	z-index: -1;
-	object-fit: cover;
+		height: 100vh;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		object-fit: cover;
 	}
+	
 	@media (min-width: 992px) {
 		.page {
 			grid-template-columns: 1fr 1fr;
@@ -67,7 +69,7 @@ const Wrapper = styled.section`
 		}
 		.links {
 			font-size: 1.3rem;
-			display:grid;
+			display: grid;
 		}
 
 		p {
@@ -97,7 +99,6 @@ const Wrapper = styled.section`
 			font-size: 1.2rem;
 		}
 	}
-	@media screen and (min-width: 1025px) {
-	}
+	
 `
 export default Wrapper

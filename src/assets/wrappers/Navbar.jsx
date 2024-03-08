@@ -22,7 +22,7 @@ const Wrapper = styled.section`
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		background-color: #f3f3f3e0;
+		background-color: #f8f8f8;
 		position: fixed;
 		top: 0;
 		z-index: 1;
