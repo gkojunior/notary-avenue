@@ -1,24 +1,19 @@
 import styled from 'styled-components'
 
 const Wrapper = styled.section`
-		width: 100vw;
-
+	width: 100vw;
 	height: 100vh;
 	background-size: cover;
 	text-align: left;
-	
+
 	.page {
-		height: 80vh;
 		display: grid;
 		align-items: center;
 	}
-
 	h1 {
 		font-weight: 700;
-
 		color: var(--pink-dark);
 	}
-
 	a {
 		padding: 1rem;
 		color: var(--pink-dark);
@@ -42,7 +37,7 @@ const Wrapper = styled.section`
 		z-index: -1;
 		object-fit: cover;
 	}
-	
+
 	@media (min-width: 992px) {
 		.page {
 			grid-template-columns: 1fr 1fr;
@@ -59,31 +54,42 @@ const Wrapper = styled.section`
 
 	/* ---------- Cell phone View ------------ */
 
-	@media screen and (max-width: 425px) {
+	@media screen and (max-width: 767px) {
+		h1 {
+			padding-top: 2rem;
+			font-size: 3rem;
+		}
 		h1,
 		p,
 		.links {
-			font-size: 2rem;
-
+			font-size: 1.5rem;
+			display: grid;
 			text-align: center;
 		}
-		.links {
-			font-size: 1.3rem;
-			display: grid;
+		h1 {
+			padding-top: 2rem;
+			font-size: 2rem;
 		}
-
 		p {
 			font-size: 0.9rem;
 		}
 		.page {
 			grid-template-columns: 1fr;
 		}
+		.slider {
+			padding-top: 9rem;
+		}
 	}
 	/* ---------- Tablet View ------------ */
 
 	@media screen and (min-width: 768px) {
+		.page {
+			height: 70vh;
+			text-align: center;
+		}
 		.links {
 			display: flex;
+			justify-content: center;
 		}
 		h1 {
 			font-size: 3rem;
@@ -92,6 +98,9 @@ const Wrapper = styled.section`
 	/* ---------- Laptop View ------------ */
 
 	@media screen and (min-width: 1024px) {
+		.page {
+			height: 70vh;
+		}
 		h1 {
 			font-size: 4rem;
 		}
@@ -99,6 +108,5 @@ const Wrapper = styled.section`
 			font-size: 1.2rem;
 		}
 	}
-	
 `
 export default Wrapper

@@ -6,7 +6,7 @@ const Wrapper = styled.section`
 	max-width: 80vw;
 	position: relative;
 	bottom: 0;
-	height: 150px;
+	height: 200px;
 	overflow: hidden;
 
 	.slide {
@@ -14,7 +14,6 @@ const Wrapper = styled.section`
 		position: absolute;
 		bottom: 0;
 		left: 0;
-
 		width: 100%;
 		transition: var(--transition);
 	}
@@ -23,18 +22,15 @@ const Wrapper = styled.section`
 		font-size: 1.3rem;
 		font-weight: 500;
 		text-transform: uppercase;
-		color: #ffffff;
-		margin-bottom: 0.5rem;
+		color: #5f00a7;
 	}
 	.title {
 		text-transform: capitalize;
 		color: var(--pink-dark);
-		margin-bottom: 0.75rem;
 	}
 	.text {
 		/* max-width: 50em; */
 		margin: 0 auto;
-		margin-top: 1rem;
 		line-height: 2;
 		color: var(--pink-dark);
 	}
