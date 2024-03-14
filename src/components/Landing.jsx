@@ -23,7 +23,7 @@ const Landing = () => {
 						</div>
 					</div>
 				</div>
-				<div>
+				<div className='slider'>
 					<Reviews />
 				</div>
 			</Wrapper>
